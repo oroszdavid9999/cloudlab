@@ -132,6 +132,8 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-""" CSRF_TRUSTED_ORIGINS = [
-    '*'
-] """
+CSRF_TRUSTED_ORIGINS = [
+    'https://cloudlab-oroszdavid-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com/users/login/',
+    'https://cloudlab-oroszdavid-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com/users',
+    'https://cloudlab-oroszdavid-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com'
+] 
