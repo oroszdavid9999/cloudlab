@@ -14,6 +14,8 @@ WORKDIR /code
 
 EXPOSE 8000
 
+RUN chmod -R u+w db.sqlite3
+
 # runs the production server
 ENTRYPOINT ["python", "manage.py"]
 CMD ["runserver", "0.0.0.0:8000"]
